@@ -4,7 +4,23 @@ module.exports = {
     /* ... */
   },
   plugins: [
-    /* ... */
+    '@snowpack/plugin-svelte',
+    'snowpack-plugin-less',
+    [
+      'snowpack-plugin-rollup-bundle', {
+        preserveSourceFiles: true,
+        entrypoints: [
+          'build/src/SimpleSelections.svelte.js',
+          'build/src/SimpleTypeahead.svelte.js',
+        ],
+        extendedConfig: (config) => {
+          config.outputOptions = {
+
+          };
+          return config;
+        },
+      },
+    ],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -18,7 +34,7 @@ module.exports = {
     /* ... */
   },
   devOptions: {
-    /* ... */
+    open: 'none',
   },
   buildOptions: {
     /* ... */

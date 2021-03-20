@@ -1,10 +1,28 @@
 {
+  "name": "@savvagent/simple-svelte-typeahead",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {
-    "snowpack": "^3.0.1"
+    "@canarise/snowpack-eslint-plugin": "^0.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@snowpack/plugin-svelte": "^3.5.2",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-svelte3": "^3.1.2",
+    "miragejs": "^0.1.41",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "rollup": "^2.42.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "snowpack": "^3.0.1",
+    "snowpack-plugin-less": "^1.0.7",
+    "snowpack-plugin-rollup-bundle": "^0.4.4"
+  },
+  "dependencies": {
+    "svelte": "^3.35.0"
   }
 }

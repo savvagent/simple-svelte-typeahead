@@ -1,2 +1,2 @@
-/* Add JavaScript code here! */
-console.log('Hello World! You did! Welcome to Snowpack :D');
+export { default as SimpleTypeahead } from "./src/SimpleTypeahead.svelte";
+export { default as SimpleSelections } from "./src/SimpleSelections.svelte";
